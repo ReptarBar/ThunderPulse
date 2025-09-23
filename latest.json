@@ -1,0 +1,96 @@
+{
+  "generatedAt": "2025-09-05T05:21:02.460020Z",
+  "sources": {
+    "github": {
+      "source": "github",
+      "windows": {
+        "7": {
+          "total": 0
+        },
+        "14": {
+          "total": 0
+        },
+        "30": {
+          "total": 0
+        },
+        "60": {
+          "total": 0
+        },
+        "90": {
+          "total": 0
+        },
+        "180": {
+          "total": 0
+        },
+        "365": {
+          "total": 0
+        },
+        "all": {
+          "total": 0
+        }
+      },
+      "months": [
+        {
+          "key": "2025-08",
+          "label": "Aug 2025",
+          "total": 0
+        },
+        {
+          "key": "2025-07",
+          "label": "Jul 2025",
+          "total": 0
+        },
+        {
+          "key": "2025-06",
+          "label": "Jun 2025",
+          "total": 0
+        },
+        {
+          "key": "2025-05",
+          "label": "May 2025",
+          "total": 0
+        },
+        {
+          "key": "2025-04",
+          "label": "Apr 2025",
+          "total": 0
+        },
+        {
+          "key": "2025-03",
+          "label": "Mar 2025",
+          "total": 0
+        },
+        {
+          "key": "2025-02",
+          "label": "Feb 2025",
+          "total": 0
+        },
+        {
+          "key": "2025-01",
+          "label": "Jan 2025",
+          "total": 0
+        },
+        {
+          "key": "2024-12",
+          "label": "Dec 2024",
+          "total": 0
+        },
+        {
+          "key": "2024-11",
+          "label": "Nov 2024",
+          "total": 0
+        },
+        {
+          "key": "2024-10",
+          "label": "Oct 2024",
+          "total": 0
+        },
+        {
+          "key": "2024-09",
+          "label": "Sep 2024",
+          "total": 0
+        }
+      ]
+    }
+  }
+}

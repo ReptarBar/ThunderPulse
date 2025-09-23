@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FlockStats</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <div class="title">
+        <h1>FlockStats</h1>
+        <p class="tag">A living snapshot of Thunderbird contributors</p>
+      </div>
+      <div class="actions">
+        <label for="windowSel" class="sel-label">Time window</label>
+        <select id="windowSel" class="sel" aria-label="Select time window">
+          <option value="7">Last 7 days</option>
+          <option value="14">Last 14 days</option>
+          <option value="30" selected>Last 30 days</option>
+          <option value="60">Last 60 days</option>
+          <option value="90">Last 90 days</option>
+          <option value="180">Last 180 days</option>
+          <option value="365">Last 365 days</option>
+          <option value="all">All time</option>
+        </select>
+        <button id="aboutBtn" class="btn" aria-haspopup="dialog" aria-controls="aboutDialog">About</button>
+      </div>
+    </header>
+
+    <p class="intro">This dashboard shows how many people have contributed to Thunderbird. It updates once per day.</p>
+
+    <section class="grid">
+      <article class="card" aria-labelledby="gh-title">
+        <h2 id="gh-title">GitHub contributors</h2>
+        <ul class="metrics">
+          <li><span id="gh-label">Contributors in the selected window</span><strong id="gh-num">–</strong></li>
+          <li><span>All-time contributors</span><strong id="gh-all">–</strong></li>
+        </ul>
+
+        <div class="months">
+          <div class="months__label">By month</div>
+          <div id="monthsRow" class="months__row" role="tablist" aria-label="Select a month">
+            <!-- Month buttons injected here -->
+          </div>
+          <div class="months__value"><span id="monthLabel">Select a month</span> <strong id="monthNum">–</strong></div>
+        </div>
+
+        <p class="stamp">Last updated: <span id="updated">–</span></p>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </article>
+    </section>
+  </main>
+
+  <!-- About dialog -->
+  <div id="aboutDialog" class="modal" role="dialog" aria-modal="true" aria-labelledby="aboutTitle" aria-describedby="aboutDesc" hidden>
+    <div class="modal__box">
+      <header class="modal__head">
+        <h3 id="aboutTitle">About this dashboard</h3>
+        <button class="btn btn--icon" id="aboutClose" aria-label="Close about dialog">×</button>
+      </header>
+      <div class="modal__body" id="aboutDesc">
+        <p><strong>What you see</strong>: contributor counts for Thunderbird.</p>
+        <ul>
+          <li>Choose a time window in the top right.</li>
+          <li>Use the month buttons to view a specific month.</li>
+          <li>Refresh schedule: once per day.</li>
+          <li>Current sources: GitHub commits. More sources will follow.</li>
+        </ul>
+        <p><strong>Privacy</strong>: we publish totals only. No private data.</p>
+        <p>For simple steps see <a href="../USAGE.md">USAGE.md</a>. For privacy notes see <a href="../PRIVACY.md">PRIVACY.md</a>.</p>
+      </div>
+      <footer class="modal__foot">
+        <button class="btn" id="aboutOk">OK</button>
+      </footer>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

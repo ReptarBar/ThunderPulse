@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="FlockStats">
+  <rect width="96" height="96" rx="16" fill="#0B2239"/>
+  <path d="M28 54c7-12 20-20 34-20 4 0 8 1 12 2-3 10-12 18-24 21-9 2-18 1-22-3z" fill="#7DD3FC"/>
+  <circle cx="64" cy="36" r="3" fill="#0B2239"/>
+  <path d="M20 70h10M34 70h10M48 70h10" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+</svg>

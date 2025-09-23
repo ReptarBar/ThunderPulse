@@ -1,11 +1,9 @@
-yaml
 name: ETL
 
 on:
   schedule:
-    # Run daily at 2 AM UTC
     - cron: '0 2 * * *'
-  workflow_dispatch: # Allow manual runs
+  workflow_dispatch:
 
 jobs:
   etl:

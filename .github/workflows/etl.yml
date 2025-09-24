@@ -13,7 +13,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.FLOCK_TOKEN }}
     
     - name: Setup Node.js
       uses: actions/setup-node@v4
@@ -34,9 +34,9 @@ jobs:
     
     - name: Run ETL
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.FLOCK_TOKEN }}
         SALT: ${{ secrets.SALT }}
-        GITHUB_ORG: ${{ secrets.GITHUB_ORG || 'thunderbird' }}
+        GITHUB_ORG: ${{ secrets.ORG_NAME || 'thunderbird' }}
       run: |
         cd etl
         npm start
